@@ -36,4 +36,17 @@
 
         width: 95vw;
     }
+
+    /********** Formatação da tela 3.1 --> Comece pelo Começo **********/
+
+    .formulario-usuario, .formulario-usuario input, .titulo-tela3{
+        width: 100%;
+    }
+
+    .formulario-usuario{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    /********** Formatação da tela 3.2 --> Crie suas perguntas **********/
 }

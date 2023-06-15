@@ -4,7 +4,7 @@ axios.defaults.headers.common['Authorization'] = 'Wzez4a3YIDoCsVRbeXAYFCmh';
 // Buscar quizzes no servidor e renderizar
 let quizzes = [];
 
-function carregarQuizzes(){
+function carregarQuizzes() {
 
     const promise = axios.get('https://mock-api.driven.com.br/api/vm/buzzquizz/quizzes',);
     promise.then(quizzesRecebidos);
@@ -12,7 +12,7 @@ function carregarQuizzes(){
 carregarQuizzes()
 
 // Receber quizzes vindo do servidor
-function quizzesRecebidos(res){
+function quizzesRecebidos(res) {
     console.log(res.data);
     quizzes = res.data;
 
@@ -20,12 +20,12 @@ function quizzesRecebidos(res){
 }
 
 // Mostrar quizzes no HTML 
-function renderizarQuizzes(){
+function renderizarQuizzes() {
 
     const containerQuizz = document.querySelector('.container-quizzes');
     containerQuizz.innerHTML = '';
 
-    for( let i = 0; i < quizzes.length; i++){
+    for (let i = 0; i < quizzes.length; i++) {
 
         let quizz = quizzes[i];
 
@@ -34,26 +34,30 @@ function renderizarQuizzes(){
                 <img src='${quizzes[i].image}'>
                 <p>${quizzes[i].title}</p>
             </div>
-        ` 
+        `
     }
     console.log(containerQuizz);
 }
 
 // TELA 3.1
 
-function renderizarTela3(){
+function renderizarTela3() {
 
     const tela3 = document.querySelector('.tela');
     tela3.innerHTML = `
-        <div class="titulo-tela3">Comece pelo começo</div>
-
-        <div class="formulario-usuario">
-            <input type="text" placeholder="Título do seu quizz">
-            <input type="url" placeholder="URL da imagem do seu quizz">
-            <input type="text" placeholder="Quantidade de perguntas do quizz">
-            <input type="text" placeholder="Quantidade de níveis do quizz">
+        <div class="titulo-tela3">
+            <div class="paragrafo-comeco">
+                <p>Comece pelo começo</p>
+            </div>
+            <div class="formulario-usuario">
+                <input type="text" placeholder="Título do seu quizz">
+                <input type="url" placeholder="URL da imagem do seu quizz">
+                <input type="text" placeholder="Quantidade de perguntas do quizz">
+                <input type="text" placeholder="Quantidade de níveis do quizz">
+            </div>
+            <button class="botao-tela3" onclick="renderizarTela32()">
+                <p>Prosseguir pra criar perguntas</p>
+            </button>
         </div>
-
-        <button class="botao-tela3" onclick="renderizarTela32()">Prosseguir pra criar perguntas</button>
     `;
 }
