@@ -61,3 +61,20 @@ function renderizarTela3() {
         </div>
     `;
 }
+
+// TELA 3.2
+function renderizarTela32(){
+
+}
+
+// TELA 3.3
+function renderizarTela33(){
+
+}
+
+
+// TELA 3.4
+function renderizarTela34(){
+
+}
+
