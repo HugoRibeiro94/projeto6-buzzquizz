@@ -38,3 +38,22 @@ function renderizarQuizzes(){
     }
     console.log(containerQuizz);
 }
+
+// TELA 3.1
+
+function renderizarTela3(){
+
+    const tela3 = document.querySelector('.tela');
+    tela3.innerHTML = `
+        <div class="titulo-tela3">Comece pelo começo</div>
+
+        <div class="formulario-usuario">
+            <input type="text" placeholder="Título do seu quizz">
+            <input type="url" placeholder="URL da imagem do seu quizz">
+            <input type="text" placeholder="Quantidade de perguntas do quizz">
+            <input type="text" placeholder="Quantidade de níveis do quizz">
+        </div>
+
+        <button class="botao-tela3" onclick="renderizarTela32()">Prosseguir pra criar perguntas</button>
+    `;
+}
