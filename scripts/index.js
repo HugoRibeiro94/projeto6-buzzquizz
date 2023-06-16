@@ -110,16 +110,10 @@ function renderizarTela32() {
             <input type="url" placeholder="URL da imagem 2">
             <input type="text" placeholder="Resposta incorreta 3">
             <input type="url" placeholder="URL da imagem 3">
-
         </div>
-
             <button class="botao-tela3" onclick="renderizarTela33()">
                 <p>Prosseguir pra criar níveis</p>
             </button>
-        </div>
-        <button class="botao-tela32" onclick="renderizarTela33()">
-            <p>Prosseguir pra criar níveis</p>
-        </button>
     `;
 
 }
@@ -131,20 +125,20 @@ function renderizarTela33() {
         <div class="titulo-tela3">
             <div class="paragrafo-comeco">
                 <p>Agora, decida os níveis</p>
-            </div>
+            <div>
             
-            <div class="formulario-nivel">
+            <div class="formularionivel">
                 <div class="titulo">Nível 1</div>
                 <input type="text" placeholder="Título do nível">
                 <input type="text" placeholder="% de acerto mínima">
                 <input type="url" placeholder="URL da imagem do nível">
                 <input type="text" placeholder="Descrição do nível">
-            </div>
+            <div>
 
             <button class="botao-tela3" onclick="renderizarTela34()">
                 <p>Finalizar Quizz</p>
             </button>
-        </div>
+        <div>
     `;
 }
 // TELA 3.4
@@ -153,7 +147,7 @@ function renderizarTela34() {
     const tela3 = document.querySelector('.tela');
     tela3.innerHTML = `
         <div class="titulo-tela3">
-            <div class="paragrafo-comeco">
+            <div class="paragrafocomeco">
                 <p>Seu quizz está pronto!</p>
             </div>
             
@@ -163,7 +157,7 @@ function renderizarTela34() {
             <button class="botao-retornar">
                 <p>Voltar pra home</p>
             </button>
-        </div>
+        <div>
     `;
 }
 
