@@ -217,6 +217,15 @@ body {
 
 /********** Formatação da tela 3.2 --> Crie suas perguntas **********/
 
+.titulo-tela3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto auto auto;
+    width: 100%;
+}
+
 .formulario-perguntas{
     width: 600px;
     height: 825px;
@@ -226,15 +235,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
 
-.titulo-tela32 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 120px auto auto auto;
-    width: 100%;
 }
 
 .titulo{
@@ -259,6 +260,20 @@ body {
     font-size: 19px;
 
     color: #BABABA;
+}
+
+.botao-tela32 {
+    height: 54px;
+    width: 367px;
+    border-radius: 15px;
+    border: 1px solid #EC362D;
+    margin-top: 60px;
+    background-color: #EC362D;
+
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFF5F4;
 }
 
 /********** Formatação da tela 3.3 --> Agora, decida os níveis **********/

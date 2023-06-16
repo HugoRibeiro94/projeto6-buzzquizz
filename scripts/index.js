@@ -67,22 +67,31 @@ function renderizarTela32() {
     const tela32 = document.querySelector('.tela');
     tela32.innerHTML = `
     <div class="titulo-tela3">
-    <div class="paragrafo-comeco">
-        <p>Crie suas perguntas</p>
-    <div>
-    
-    <div class="formularionivel">
-        <div class="titulo">Nível 1</div>
-        <input type="text" placeholder="Título do nível">
-        <input type="text" placeholder="% de acerto mínima">
-        <input type="url" placeholder="URL da imagem do nível">
-        <input type="text" placeholder="Descrição do nível">
-    <div>
+        <div class="paragrafo-comeco">
+            <p>Crie suas perguntas</p>
+        </div>
+        
+        <div class="formulario-perguntas ">
+            <div class="titulo">Pergunta 1</div>
+            <input type="text" placeholder="Texto da pergunta">
+            <input type="text" placeholder="Cor de fundo da pergunta">
 
-    <button class="botao-tela3" onclick="renderizarTela33()">
-        <p>Prosseguir pra criar níveis</p>
-    </button>
-<div>
+            <div class="titulo">Resposta correta</div>
+            <input type="text" placeholder="Resposta correta">
+            <input type="text" placeholder="URL da imagem">
+
+            <div class="titulo">Respostas incorretas</div>
+            <input type="text" placeholder="Resposta incorreta 1">
+            <input type="text" placeholder="URL da imagem 1">
+            <input type="url" placeholder="Resposta incorreta 2">
+            <input type="text" placeholder="URL da imagem 2">
+            <input type="url" placeholder="Resposta incorreta 3">
+            <input type="text" placeholder="URL da imagem 3">
+        </div>
+        <button class="botao-tela32" onclick="renderizarTela33()">
+            <p>Prosseguir pra criar níveis</p>
+        </button>
+    </div>
     `;
 
 }
