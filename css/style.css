@@ -321,3 +321,9 @@ body {
     text-align: center;
     color: #818181;
 }
+
+/********** Formatação tela desativada **********/
+
+.desativada{
+    display: none;
+}
