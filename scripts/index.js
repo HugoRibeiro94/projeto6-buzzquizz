@@ -94,6 +94,8 @@ function renderizarTela32() {
     </div>
     `;
 
+    
+
 }
 
 // TELA 3.3
