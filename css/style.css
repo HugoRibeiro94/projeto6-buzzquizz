@@ -217,6 +217,140 @@ body {
 
 /********** Formatação da tela 3.2 --> Crie suas perguntas **********/
 
+.titulo-tela32 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto auto auto;
+    width: 100%;
+}
+
+.paragrafo-comeco-tela-32 {
+    color: #000000;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+/********** Formatação pergunta 1 **********/
+
+.pergunta-1 {
+    height: 256px;
+    width: 600px;
+    left: 420px;
+    top: 194px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+    margin-top: 27px;
+
+    background-color: yellow;
+}
+
+.titulo-pergunta-1 {
+    color: #000000;
+    font-size: 23px;
+    font-weight: 700;
+    margin-right: 450px;
+}
+
+.pergunta-1 input {
+    height: 46px;
+    width: 564px;
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+
+    font-style: italic;
+    font-weight: 400;
+    font-size: 19px;
+
+    color: #BABABA;
+}
+
+/********** Formatação resposta correta **********/
+
+.resposta-correta {
+    height: 256px;
+    width: 600px;
+    left: 420px;
+    top: 194px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+    margin-top: 27px;
+}
+
+.resposta-correta input {
+    height: 46px;
+    width: 564px;
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+
+    font-style: italic;
+    font-weight: 400;
+    font-size: 19px;
+
+    color: #BABABA;
+}
+
+/********** Formatação respostas incorretas **********/
+
+.respostas-incorretas {
+    height: 256px;
+    width: 600px;
+    left: 420px;
+    top: 194px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+    margin-top: 27px;
+}
+
+.respostas-incorretas input {
+    height: 46px;
+    width: 564px;
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+
+    font-style: italic;
+    font-weight: 400;
+    font-size: 19px;
+
+    color: #BABABA;
+}
+
+/********** Formatação do botão **********/
+
+.botao-tela32 {
+    height: 54px;
+    width: 367px;
+    border-radius: 15px;
+    border: 1px solid #EC362D;
+    background-color: #EC362D;
+
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFF5F4;
+}
+
 
 
 
