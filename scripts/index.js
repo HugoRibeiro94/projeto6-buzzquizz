@@ -98,11 +98,36 @@ function renderizarTela32() {
 
 // TELA 3.3
 function renderizarTela33() {
-    alert('teste');
-
+    const tela3 = document.querySelector('.tela');
+    tela3.innerHTML = `
+        <div class="titulo-tela3">
+            <div class="paragrafo-comeco">
+                <p>Agora, decida os níveis</p>
+            </div>
+            
+            <button class="botao-tela3" onclick="renderizarTela34()">
+                <p>Prosseguir pra criar perguntas</p>
+            </button>
+        </div>
+    `;
 }
 // TELA 3.4
 function renderizarTela34() {
 
+    const tela3 = document.querySelector('.tela');
+    tela3.innerHTML = `
+        <div class="titulo-tela3">
+            <div class="paragrafo-comeco">
+                <p>Seu quizz está pronto!</p>
+            </div>
+            
+            <button class="botao-tela3">
+                <p>Acessar Quizz</p>
+            </button>
+            <button class="botao-retornar">
+                <p>Voltar pra home</p>
+            </button>
+        </div>
+    `;
 }
 

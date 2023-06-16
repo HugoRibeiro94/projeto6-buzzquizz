@@ -397,3 +397,8 @@ body {
 
 
 /********** Formatação da tela 3.4 --> Seu quizz está pronto! **********/
+.botao-retonarhome{
+    background-color: #FFFFFF;
+    color: #818181;
+    border: none;
+}
