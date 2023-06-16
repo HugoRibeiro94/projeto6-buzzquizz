@@ -102,7 +102,7 @@ function isImage(string) {
 function renderizarTela32() {
     const tela32 = document.querySelector('.tela');
     tela32.innerHTML = `
-    <div class="titulo-tela3">
+    <div class="titulo-tela3 testehugo">
         <div class="paragrafo-comeco">
             <p>Crie suas perguntas</p>
         </div>
