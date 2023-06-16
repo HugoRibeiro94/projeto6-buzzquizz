@@ -101,8 +101,6 @@ function renderizarTela33() {
     alert('teste');
 
 }
-
-
 // TELA 3.4
 function renderizarTela34() {
 
