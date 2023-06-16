@@ -40,7 +40,6 @@ function renderizarQuizzes() {
 }
 
 // TELA 3.1
-
 function renderizarTela3() {
 
     const tela3 = document.querySelector('.tela');
@@ -91,17 +90,50 @@ function renderizarTela32(){
     
             <button class="botao-tela3" onclick="renderizarTela33()">Prosseguir pra criar níveis</button>
         `;
+function renderizarTela32() {
+
+    const tela32 = document.querySelector('.tela');
+    tela32.innerHTML = `
+        <div class="titulo-tela32">
+            <div class="paragrafo-comeco-tela-32">
+                <p>Crie suas perguntas</p>
+            </div>
+            <div class="pergunta-1">
+                <p class="titulo-pergunta-1">Pergunta 1</p>
+                <input type="text" placeholder="Título do seu quizz">
+                <input type="url" placeholder="URL da imagem do seu quizz">
+            </div>
+            <div class="resposta-correta">
+                <p class="titulo-resposta-correta">Resposta correta</p>
+                <input type="text" placeholder="Título do seu quizz">
+                <input type="url" placeholder="URL da imagem do seu quizz">
+            </div>
+            <div class="respostas-incorretas">
+                <input type="text" placeholder="Título do seu quizz">
+                <input type="url" placeholder="URL da imagem do seu quizz">
+                <input type="text" placeholder="Quantidade de perguntas do quizz">
+                <input type="text" placeholder="Quantidade de níveis do quizz">
+                <input type="text" placeholder="Quantidade de perguntas do quizz">
+                <input type="text" placeholder="Quantidade de níveis do quizz">
+            </div>
+            <button class="botao-tela32" onclick="renderizarTela33()">
+                <p>Prosseguir pra criar níveis</p>
+            </button>
+        </div>
+    `;
+
 }
 
 
 // TELA 3.3
-function renderizarTela33(){
+function renderizarTela33() {
+    alert('teste');
 
 }
 
 
 // TELA 3.4
-function renderizarTela34(){
-
+function renderizarTela34() {
+    alert('oi');
 }
 
