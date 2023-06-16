@@ -226,6 +226,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
+
 .titulo-tela32 {
     display: flex;
     flex-direction: column;
