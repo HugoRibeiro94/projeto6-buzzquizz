@@ -63,35 +63,36 @@ function renderizarTela3() {
 
 // TELA 3.2
 function renderizarTela32() {
-    
+
     const tela32 = document.querySelector('.tela');
     tela32.innerHTML = `
-        <div class="titulo-tela32">
-            <div class="paragrafo-comeco-tela-32">
-                <p>Crie suas perguntas</p>
-            </div>
-            <div class="pergunta-1">
-                <p class="titulo-pergunta-1">Pergunta 1</p>
-                <input type="text" placeholder="Título do seu quizz">
-                <input type="url" placeholder="URL da imagem do seu quizz">
-            </div>
-            <div class="resposta-correta">
-                <p class="titulo-resposta-correta">Resposta correta</p>
-                <input type="text" placeholder="Título do seu quizz">
-                <input type="url" placeholder="URL da imagem do seu quizz">
-            </div>
-            <div class="respostas-incorretas">
-                <input type="text" placeholder="Título do seu quizz">
-                <input type="url" placeholder="URL da imagem do seu quizz">
-                <input type="text" placeholder="Quantidade de perguntas do quizz">
-                <input type="text" placeholder="Quantidade de níveis do quizz">
-                <input type="text" placeholder="Quantidade de perguntas do quizz">
-                <input type="text" placeholder="Quantidade de níveis do quizz">
-            </div>
-            <button class="botao-tela32" onclick="renderizarTela33()">
-                <p>Prosseguir pra criar níveis</p>
-            </button>
+
+        <div class="paragrafo-comeco-tela-32">
+            <p>Crie suas perguntas</p>
         </div>
+
+        <div class="titulo-tela32">
+            <div class ="formulario-perguntas">
+                <div class="pergunta-1">
+                    <p>Pergunta 1</p>
+                    <input type="text" placeholder="Título do seu quizz">
+                    <input type="url" placeholder="URL da imagem do seu quizz">
+                </div>
+                <div class="resposta-correta">
+                    <p>resposta-correta</p>
+                    <input type="text" placeholder="Título do seu quizz">
+                    <input type="url" placeholder="URL da imagem do seu quizz">
+                </div>
+                <div class="respostas-incorretas">
+                    <p>respostas-incorretas</p>
+                    <input type="text" placeholder="Título do seu quizz">
+                    <input type="url" placeholder="URL da imagem do seu quizz">
+                </div>
+            </div>
+        </div>
+        <button class="botao-tela32" onclick="renderizarTela33()">
+            <p>Prosseguir pra criar níveis</p>
+        </button>
     `;
 
 }
