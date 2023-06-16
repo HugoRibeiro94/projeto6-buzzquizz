@@ -64,8 +64,35 @@ function renderizarTela3() {
 
 // TELA 3.2
 function renderizarTela32(){
-
+    
+    const tela3 = document.querySelector('.tela');
+    tela3.innerHTML = `
+        <div class="titulo-tela3">Crie suas perguntas</div>
+    
+        <div class="formulario-perguntas">
+    
+                <div class="titulo">Pergunta 1</div>
+                <input type="text" placeholder="Texto da pergunta">
+                <input type="color" placeholder="Cor de fundo da pergunta">
+    
+                <div class="titulo">Resposta correta</div>
+                <input type="text" placeholder="Resposta correta">
+                <input type="url" placeholder="URL da imagem">
+    
+                <div class="titulo">Resposta incorretas</div>
+                <input type="text" placeholder="Resposta incorreta 1">
+                <input type="url" placeholder="URL da imagem 1">
+                <input type="text" placeholder="Resposta incorreta 2">
+                <input type="url" placeholder="URL da imagem 2">
+                <input type="text" placeholder="Resposta incorreta 3">
+                <input type="url" placeholder="URL da imagem 3">
+    
+            </div>
+    
+            <button class="botao-tela3" onclick="renderizarTela33()">Prosseguir pra criar níveis</button>
+        `;
 }
+
 
 // TELA 3.3
 function renderizarTela33(){
