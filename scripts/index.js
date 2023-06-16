@@ -55,6 +55,12 @@ function renderizarTela3() {
                 <input class="qtd-niveis" type="text" placeholder="Quantidade de níveis do quizz">
             </div>
             <button class="botao-tela3" onclick = "verificaUrl()">
+                <input type="text" placeholder="Título do seu quizz" data-test="title-input">
+                <input type="url" placeholder="URL da imagem do seu quizz" data-test="img-input">
+                <input type="text" placeholder="Quantidade de perguntas do quizz" data-test="questions-amount-input">
+                <input type="text" placeholder="Quantidade de níveis do quizz" data-test="levels-amount-input">
+            </div>
+            <button class="botao-tela3" onclick="renderizarTela32()" data-test="go-create-questions">
                 <p>Prosseguir pra criar perguntas</p>
             </button>
         </div>
@@ -124,24 +130,25 @@ function renderizarTela32() {
             <p>Crie suas perguntas</p>
         </div>
         
-        <div class="formulario-perguntas ">
+        <div class="formulario-perguntas" data-test="question-ctn">
             <div class="titulo">Pergunta 1</div>
-            <input type="text" placeholder="Texto da pergunta">
-            <input type="text" placeholder="Cor de fundo da pergunta">
+            <input type="text" placeholder="Texto da pergunta" data-test="question-input">
+            <input type="text" placeholder="Cor de fundo da pergunta" data-test="question-color-input">
 
             <div class="titulo">Resposta correta</div>
-            <input type="text" placeholder="Resposta correta">
-            <input type="text" placeholder="URL da imagem">
+            <input type="text" placeholder="Resposta correta" data-test="correct-answer-input">
+            <input type="text" placeholder="URL da imagem" data-test="correct-img-input">
 
             <div class="titulo">Respostas incorretas</div>
-            <input type="text" placeholder="Resposta incorreta 1">
-            <input type="text" placeholder="URL da imagem 1">
-            <input type="url" placeholder="Resposta incorreta 2">
-            <input type="text" placeholder="URL da imagem 2">
-            <input type="url" placeholder="Resposta incorreta 3">
-            <input type="text" placeholder="URL da imagem 3">
+            <input type="text" placeholder="Resposta incorreta 1" data-test="wrong-answer-input"">
+            <input type="text" placeholder="URL da imagem 1" data-test="wrong-img-input">
+            <input type="url" placeholder="Resposta incorreta 2" data-test="wrong-answer-input"">
+            <input type="text" placeholder="URL da imagem 2" data-test="wrong-img-input">
+            <input type="url" placeholder="Resposta incorreta 3" data-test="wrong-answer-input"">
+            <input type="text" placeholder="URL da imagem 3" data-test="wrong-img-input">
         </div>
         <button class="botao-tela3" onclick="renderizarTela33()">
+        <button class="botao-tela3" onclick="renderizarTela33()" data-test="go-create-levels">
             <p>Prosseguir pra criar níveis</p>
         </button>
     </div>
@@ -158,15 +165,15 @@ function renderizarTela33() {
                 <p>Agora, decida os níveis</p>
             </div>
             
-            <div class="formulario-nivel">
+            <div class="formulario-nivel" data-test="level-ctn">
                 <div class="titulo">Nível 1</div>
-                <input type="text" placeholder="Título do nível">
-                <input type="text" placeholder="% de acerto mínima">
-                <input type="url" placeholder="URL da imagem do nível">
-                <input type="text" placeholder="Descrição do nível">
+                <input type="text" placeholder="Título do nível" data-test="level-input">
+                <input type="text" placeholder="% de acerto mínima" data-test="level-percent-input">
+                <input type="url" placeholder="URL da imagem do nível" data-test="level-img-input">
+                <input type="text" placeholder="Descrição do nível" data-test="level-description-input">
             </div>
 
-            <button class="botao-tela3" onclick="renderizarTela34()">
+            <button class="botao-tela33" onclick="renderizarTela34()" data-test="finish">
                 <p>Finalizar Quizz</p>
             </button>
         </div>
@@ -182,10 +189,10 @@ function renderizarTela34() {
                 <p>Seu quizz está pronto!</p>
             </div>
             
-            <button class="botao-tela3">
+            <button class="botao-tela3" data-test="go-quiz">
                 <p>Acessar Quizz</p>
             </button>
-            <button class="botao-retornar">
+            <button class="botao-retornar" data-test="go-home">
                 <p>Voltar pra home</p>
             </button>
         </div>

@@ -1,6 +1,6 @@
 @media(max-width: 1100px) {
 
-    /********** Formatação do cabeçalho e do container da tela principal **********/
+    /*Formatação dos quizes --> Todos os quizes do container*/
 
     .cabecalho,
     .menu-usuario,
@@ -39,32 +39,44 @@
         width: 95vw;
     }
 
+    /*Formatação das telas que virão depois da tela principal*/
+
     /********** Formatação da tela 3.1 --> Comece pelo Começo **********/
 
-    .formulario-usuario, .formulario-usuario input, .titulo-tela3{
+    .formulario-usuario,
+    .formulario-usuario input,
+    .titulo-tela3 {
         width: 100%;
     }
 
-    .formulario-usuario{
+    .formulario-usuario {
         padding-right: 20px;
         padding-left: 20px;
     }
 
     /********** Formatação da tela 3.2 --> Crie suas perguntas **********/
 
+    .formulario-perguntas,
+    .formulario-perguntas input,
+    .titulo-tela3 {
+        width: 100%;
+    }
 
-
-
-
+    .formulario-perguntas {
+        padding-right: 50px;
+        padding-left: 20px;
+    }
 
     /********** Formatação da tela 3.3 --> Agora, decida os níveis **********/
 
+    .formulario-nivel,
+    .formulario-nivel input,
+    .titulo-tela3 {
+        width: 100%;
+    }
 
-
-
-
-
-
-    /********** Formatação da tela 3.4 --> Seu quizz está pronto! **********/
-
+    .formulario-nivel {
+        padding-right: 50px;
+        padding-left: 20px;
+    }
 }
