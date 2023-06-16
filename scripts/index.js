@@ -76,7 +76,7 @@ function renderizarTela32() {
                 <input type="url" placeholder="URL da imagem do seu quizz">
             </div>
             <div class="resposta-correta">
-                <p class="titulo-pergunta-1">Pergunta 1</p>
+                <p class="titulo-resposta-correta">Resposta correta</p>
                 <input type="text" placeholder="Título do seu quizz">
                 <input type="url" placeholder="URL da imagem do seu quizz">
             </div>
