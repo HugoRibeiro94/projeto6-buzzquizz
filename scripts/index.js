@@ -30,7 +30,7 @@ function renderizarQuizzes() {
         let quizz = quizzes[i];
 
         containerQuizz.innerHTML += `
-            <div class="exemplo-quizz">
+            <div class="exemplo-quizz" data-test="others-quiz">
                 <img src='${quizzes[i].image}'>
                 <p>${quizzes[i].title}</p>
             </div>
@@ -89,6 +89,33 @@ function renderizarTela32() {
                     <input type="url" placeholder="URL da imagem do seu quizz">
                 </div>
             </div>
+            <div class="paragrafo-comeco">
+                <p>Crie suas perguntas</p>
+            </div>
+
+            <div class="formulario-perguntas">
+
+            <div class="titulo">Pergunta 1</div>
+            <input type="text" placeholder="Texto da pergunta">
+            <input type="color" placeholder="Cor de fundo da pergunta">
+
+            <div class="titulo">Resposta correta</div>
+            <input type="text" placeholder="Resposta correta">
+            <input type="url" placeholder="URL da imagem">
+
+            <div class="titulo">Resposta incorretas</div>
+            <input type="text" placeholder="Resposta incorreta 1">
+            <input type="url" placeholder="URL da imagem 1">
+            <input type="text" placeholder="Resposta incorreta 2">
+            <input type="url" placeholder="URL da imagem 2">
+            <input type="text" placeholder="Resposta incorreta 3">
+            <input type="url" placeholder="URL da imagem 3">
+
+        </div>
+
+            <button class="botao-tela3" onclick="renderizarTela33()">
+                <p>Prosseguir pra criar níveis</p>
+            </button>
         </div>
         <button class="botao-tela32" onclick="renderizarTela33()">
             <p>Prosseguir pra criar níveis</p>
@@ -99,11 +126,44 @@ function renderizarTela32() {
 
 // TELA 3.3
 function renderizarTela33() {
-    alert('teste');
+    const tela3 = document.querySelector('.tela');
+    tela3.innerHTML = `
+        <div class="titulo-tela3">
+            <div class="paragrafo-comeco">
+                <p>Agora, decida os níveis</p>
+            </div>
+            
+            <div class="formulario-nivel">
+                <div class="titulo">Nível 1</div>
+                <input type="text" placeholder="Título do nível">
+                <input type="text" placeholder="% de acerto mínima">
+                <input type="url" placeholder="URL da imagem do nível">
+                <input type="text" placeholder="Descrição do nível">
+            </div>
 
+            <button class="botao-tela3" onclick="renderizarTela34()">
+                <p>Finalizar Quizz</p>
+            </button>
+        </div>
+    `;
 }
 // TELA 3.4
 function renderizarTela34() {
 
+    const tela3 = document.querySelector('.tela');
+    tela3.innerHTML = `
+        <div class="titulo-tela3">
+            <div class="paragrafo-comeco">
+                <p>Seu quizz está pronto!</p>
+            </div>
+            
+            <button class="botao-tela3">
+                <p>Acessar Quizz</p>
+            </button>
+            <button class="botao-retornar">
+                <p>Voltar pra home</p>
+            </button>
+        </div>
+    `;
 }
 
