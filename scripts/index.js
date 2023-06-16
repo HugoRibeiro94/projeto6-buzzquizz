@@ -80,6 +80,24 @@ function pegarInput() {
 
     
 }
+
+function verificaUrl() {
+    const string = document.querySelector('.url-quizz').value;
+    try {
+     let url = new URL(string);
+     console.log("Valida URL!");
+   } catch(err) {
+       console.log("Invalida URL!");
+   }
+   pegarInput()
+   isImage(string)
+   renderizarTela32()
+} 
+
+function isImage(string) {
+    return /^https?:\/\/.+\.(jpg|jpeg|png|webp|avif|gif|svg)$/.test(string);
+}
+
 // TELA 3.2
 function renderizarTela32() {
     const tela32 = document.querySelector('.tela');
@@ -106,10 +124,6 @@ function renderizarTela32() {
             <input type="url" placeholder="Resposta incorreta 3" data-test="wrong-answer-input"">
             <input type="text" placeholder="URL da imagem 3" data-test="wrong-img-input">
         </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> a5525fdc911e17a14a7b7b765f35d8b7308f6455
         <button class="botao-tela3" onclick="renderizarTela33()" data-test="go-create-levels">
             <p>Prosseguir pra criar níveis</p>
         </button>
