@@ -245,6 +245,8 @@ body {
     font-size: 20px;
     line-height: 23px;
     color: #000000;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .formulario-perguntas input {
@@ -266,7 +268,7 @@ body {
 .formulario-nivel{
     width: 600px;
     height: 316px;
-    margin-top: 43px;
+    margin: 43px auto 75px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
     display: flex;
