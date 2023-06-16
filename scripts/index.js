@@ -77,22 +77,20 @@ function pegarInput() {
 
     const tamQtdNiveis = inputQtdNiveis.value;//verificar tamanho da string
     console.log(tamQtdNiveis.length);
-
-    
 }
 
 function verificaUrl() {
     const string = document.querySelector('.url-quizz').value;
     try {
-     let url = new URL(string);
-     console.log("Valida URL!");
-   } catch(err) {
-       console.log("Invalida URL!");
-   }
-   pegarInput()
-   isImage(string)
-   renderizarTela32()
-} 
+        let url = new URL(string);
+        console.log("Valida URL!");
+    } catch (err) {
+        console.log("Invalida URL!");
+    }
+    pegarInput()
+    isImage(string)
+    renderizarTela32()
+}
 
 function isImage(string) {
     return /^https?:\/\/.+\.(jpg|jpeg|png|webp|avif|gif|svg)$/.test(string);
@@ -102,7 +100,7 @@ function isImage(string) {
 function renderizarTela32() {
     const tela32 = document.querySelector('.tela');
     tela32.innerHTML = `
-    <div class="titulo-tela3">
+    <div class="titulo-tela3 teste gabriel">
         <div class="paragrafo-comeco">
             <p>Crie suas perguntas</p>
         </div>
@@ -139,7 +137,6 @@ function renderizarTela33() {
             <div class="paragrafo-comeco">
                 <p>Agora, decida os níveis</p>
             </div>
-            
             <div class="formulario-nivel" data-test="level-ctn">
                 <div class="titulo">Nível 1</div>
                 <input type="text" placeholder="Título do nível" data-test="level-input">
@@ -147,7 +144,6 @@ function renderizarTela33() {
                 <input type="url" placeholder="URL da imagem do nível" data-test="level-img-input">
                 <input type="text" placeholder="Descrição do nível" data-test="level-description-input">
             </div>
-
             <button class="botao-tela33" onclick="renderizarTela34()" data-test="finish">
                 <p>Finalizar Quizz</p>
             </button>
