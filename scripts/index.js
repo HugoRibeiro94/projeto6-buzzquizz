@@ -93,9 +93,6 @@ function renderizarTela32() {
         </button>
     </div>
     `;
-
-    
-
 }
 
 // TELA 3.3
