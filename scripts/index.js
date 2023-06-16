@@ -49,6 +49,12 @@ function renderizarTela3() {
                 <p>Comece pelo começo</p>
             </div>
             <div class="formulario-usuario">
+                <input class="titulo-quizz" type="text" placeholder="Título do seu quizz">
+                <input class="url-quizz" type="url" placeholder="URL da imagem do seu quizz">
+                <input class="qtd-perguntas" type="text" placeholder="Quantidade de perguntas do quizz">
+                <input class="qtd-niveis" type="text" placeholder="Quantidade de níveis do quizz">
+            </div>
+            <button class="botao-tela3" onclick = "verificaUrl()">
                 <input type="text" placeholder="Título do seu quizz" data-test="title-input">
                 <input type="url" placeholder="URL da imagem do seu quizz" data-test="img-input">
                 <input type="text" placeholder="Quantidade de perguntas do quizz" data-test="questions-amount-input">
@@ -59,6 +65,59 @@ function renderizarTela3() {
             </button>
         </div>
     `;
+
+
+}
+
+function pegarInput(){
+    const inputTitulo = document.querySelector('.titulo-quizz');
+    console.log(inputTitulo.value);
+
+    const tamTitulo = inputTitulo.value;//verificar tamanho da string
+    console.log(tamTitulo.length);
+    
+    const inputUrl = document.querySelector('.url-quizz');
+    console.log(inputUrl.value);
+
+    const inputQtdPerguntas = document.querySelector('.qtd-perguntas');
+    console.log(inputQtdPerguntas.value);
+
+    const tamQtdPerguntas = inputQtdPerguntas.value;//verificar tamanho da string
+    console.log(tamQtdPerguntas);
+
+    const inputQtdNiveis = document.querySelector('.qtd-niveis');
+    console.log(inputQtdNiveis.value);
+
+    const tamQtdNiveis = inputQtdNiveis.value;//verificar tamanho da string
+    console.log(tamQtdNiveis.length);
+
+    if ( tamTitulo.length > 65 || tamTitulo.length < 20 ){
+        if ( tamQtdPerguntas.length < 20 ){
+            if ( tamQtdNiveis.length < 2 ){
+                if( inputUrl.value === null || inputUrl.value === "" ){
+                    alert('OPA');
+                }
+            }
+        }
+    }
+
+}
+
+function verificaUrl() {
+    const string = document.querySelector('.url-quizz').value;
+    try {
+     let url = new URL(string);
+     console.log("Valida URL!");
+   } catch(err) {
+       console.log("Invalida URL!");
+   }
+   pegarInput()
+   isImage(string)
+   renderizarTela32()
+} 
+
+function isImage(string) {
+    return /^https?:\/\/.+\.(jpg|jpeg|png|webp|avif|gif|svg)$/.test(string);
 }
 
 // TELA 3.2
@@ -88,6 +147,7 @@ function renderizarTela32() {
             <input type="url" placeholder="Resposta incorreta 3" data-test="wrong-answer-input"">
             <input type="text" placeholder="URL da imagem 3" data-test="wrong-img-input">
         </div>
+        <button class="botao-tela3" onclick="renderizarTela33()">
         <button class="botao-tela3" onclick="renderizarTela33()" data-test="go-create-levels">
             <p>Prosseguir pra criar níveis</p>
         </button>
