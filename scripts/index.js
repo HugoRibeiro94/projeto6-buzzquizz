@@ -54,7 +54,6 @@ function renderizarTela3() {
                 <input class="qtd-perguntas" type="text" placeholder="Quantidade de perguntas do quizz">
                 <input class="qtd-niveis" type="text" placeholder="Quantidade de níveis do quizz">
             </div>
-            <button class="botao-tela3" onclick = "verificaUrl()">
                 <input type="text" placeholder="Título do seu quizz" data-test="title-input">
                 <input type="url" placeholder="URL da imagem do seu quizz" data-test="img-input">
                 <input type="text" placeholder="Quantidade de perguntas do quizz" data-test="questions-amount-input">
@@ -65,7 +64,6 @@ function renderizarTela3() {
             </button>
         </div>
     `;
-
 
 }
 
@@ -112,7 +110,6 @@ function renderizarTela32() {
             <input type="url" placeholder="Resposta incorreta 3" data-test="wrong-answer-input"">
             <input type="text" placeholder="URL da imagem 3" data-test="wrong-img-input">
         </div>
-        <button class="botao-tela3" onclick="renderizarTela33()">
         <button class="botao-tela3" onclick="renderizarTela33()" data-test="go-create-levels">
             <p>Prosseguir pra criar níveis</p>
         </button>

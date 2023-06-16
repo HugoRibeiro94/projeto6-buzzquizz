@@ -218,8 +218,6 @@ body {
 }
 
 /********** Formatação da tela 3.2 --> Crie suas perguntas **********/
-
-.formulario-perguntas,
 .titulo-tela3 {
     display: flex;
     flex-direction: column;
