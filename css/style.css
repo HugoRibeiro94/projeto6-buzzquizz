@@ -37,7 +37,7 @@ body {
     top: 0px;
     left: 0px;
     right: 0px;
-    z-index: 3;
+    z-index: 1;
 }
 
 /********** Formatação do container **********/
@@ -45,7 +45,8 @@ body {
 /*Formatação do perguntas Quiz --> A caixinha de criar os quizes*/
 
 .menu-usuario {
-    margin: 85px auto;
+    margin-top: 95px;
+    margin-bottom: 77px;
 
     height: 181px;
     width: 1051px;
@@ -94,7 +95,7 @@ body {
     font-weight: 400;
 }
 
-/*Formatação dos quizes --> Os quizes do container*/
+/*Formatação dos quizes --> Todos os quizes do container*/
 
 /*Formatação do título*/
 .titulo p {
@@ -102,7 +103,7 @@ body {
 
     width: 1051px;
 
-    margin-top: 77px;
+    margin-top: 0px;
     margin-bottom: 12px;
     margin-right: auto;
     margin-left: auto;
@@ -152,8 +153,9 @@ body {
     font-weight: 400;
 }
 
-/********** Formatação da tela 3.1 --> Comece pelo Começo **********/
+/*Formatação das telas que virão depois da tela principal*/
 
+/********** Formatação da tela 3.1 --> Comece pelo Começo **********/
 .titulo-tela3 {
     display: flex;
     flex-direction: column;
@@ -175,8 +177,7 @@ body {
 .formulario-usuario {
     height: 256px;
     width: 600px;
-    left: 420px;
-    top: 194px;
+
 
     display: flex;
     flex-direction: column;
@@ -206,7 +207,8 @@ body {
     width: 367px;
     border-radius: 15px;
     border: 1px solid #EC362D;
-    margin-top: 60px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     background-color: #EC362D;
 
     font-size: 21px;
@@ -216,7 +218,6 @@ body {
 }
 
 /********** Formatação da tela 3.2 --> Crie suas perguntas **********/
-
 .titulo-tela3 {
     display: flex;
     flex-direction: column;
@@ -226,7 +227,7 @@ body {
     width: 100%;
 }
 
-.formulario-perguntas{
+.formulario-perguntas {
     width: 600px;
     height: 825px;
     margin-top: 36px;
@@ -238,7 +239,7 @@ body {
 
 }
 
-.titulo{
+.titulo {
     margin-left: 16px;
     font-family: 'Roboto';
     font-style: normal;
@@ -264,26 +265,11 @@ body {
     color: #BABABA;
 }
 
-.botao-tela32 {
-    height: 54px;
-    width: 367px;
-    border-radius: 15px;
-    border: 1px solid #EC362D;
-    margin-top: 60px;
-    background-color: #EC362D;
-
-    font-size: 21px;
-    font-weight: 400;
-    text-align: center;
-    color: #FFF5F4;
-}
-
 /********** Formatação da tela 3.3 --> Agora, decida os níveis **********/
-
-.formulario-nivel{
+.formulario-nivel {
     width: 600px;
     height: 316px;
-    margin: 43px auto 75px;
+    margin: 43px auto 30px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -291,7 +277,7 @@ body {
     justify-content: space-around;
 }
 
-.formulario-nivel input{
+.formulario-nivel input {
     height: 46px;
     width: 564px;
     margin-left: 17px;
@@ -305,8 +291,22 @@ body {
     color: #BABABA;
 }
 
+.botao-tela33 {
+    height: 54px;
+    width: 367px;
+    border-radius: 15px;
+    border: 1px solid #EC362D;
+    margin-bottom: 10px;
+    background-color: #EC362D;
+
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFF5F4;
+}
+
 /********** Formatação da tela 3.4 --> Seu quizz está pronto! **********/
-.botao-retornar{
+.botao-retornar {
     margin-top: 10px;
     background-color: #FFFFFF;
     border: none;
