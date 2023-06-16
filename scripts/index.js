@@ -79,7 +79,7 @@ function renderizarTela32() {
         <input type="text" placeholder="Descrição do nível">
     <div>
 
-    <button class="botao-tela3" onclick="renderizarTela34()">
+    <button class="botao-tela3" onclick="renderizarTela33()">
         <p>Prosseguir pra criar níveis</p>
     </button>
 <div>
