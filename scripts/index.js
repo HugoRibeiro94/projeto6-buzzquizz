@@ -79,47 +79,12 @@ function pegarInput(){
     const inputUrl = document.querySelector('.url-quizz');
     console.log(inputUrl.value);
 
-    const inputQtdPerguntas = document.querySelector('.qtd-perguntas');
-    console.log(inputQtdPerguntas.value);
-
-    const tamQtdPerguntas = inputQtdPerguntas.value;//verificar tamanho da string
-    console.log(tamQtdPerguntas);
-
     const inputQtdNiveis = document.querySelector('.qtd-niveis');
     console.log(inputQtdNiveis.value);
 
     const tamQtdNiveis = inputQtdNiveis.value;//verificar tamanho da string
     console.log(tamQtdNiveis.length);
-
-    if ( tamTitulo.length > 65 || tamTitulo.length < 20 ){
-        if ( tamQtdPerguntas.length < 20 ){
-            if ( tamQtdNiveis.length < 2 ){
-                if( inputUrl.value === null || inputUrl.value === "" ){
-                    alert('OPA');
-                }
-            }
-        }
-    }
-
 }
-
-function verificaUrl() {
-    const string = document.querySelector('.url-quizz').value;
-    try {
-     let url = new URL(string);
-     console.log("Valida URL!");
-   } catch(err) {
-       console.log("Invalida URL!");
-   }
-   pegarInput()
-   isImage(string)
-   renderizarTela32()
-} 
-
-function isImage(string) {
-    return /^https?:\/\/.+\.(jpg|jpeg|png|webp|avif|gif|svg)$/.test(string);
-}
-
 // TELA 3.2
 function renderizarTela32() {
 
