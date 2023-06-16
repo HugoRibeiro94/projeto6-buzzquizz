@@ -67,28 +67,31 @@ function renderizarTela32() {
     const tela32 = document.querySelector('.tela');
     tela32.innerHTML = `
         <div class="titulo-tela32">
-            <div class="paragrafo-comeco-tela-32">
+            <div class="paragrafo-comeco">
                 <p>Crie suas perguntas</p>
             </div>
-            <div class="pergunta-1">
-                <p class="titulo-pergunta-1">Pergunta 1</p>
-                <input type="text" placeholder="Título do seu quizz">
-                <input type="url" placeholder="URL da imagem do seu quizz">
-            </div>
-            <div class="resposta-correta">
-                <p class="titulo-resposta-correta">Resposta correta</p>
-                <input type="text" placeholder="Título do seu quizz">
-                <input type="url" placeholder="URL da imagem do seu quizz">
-            </div>
-            <div class="respostas-incorretas">
-                <input type="text" placeholder="Título do seu quizz">
-                <input type="url" placeholder="URL da imagem do seu quizz">
-                <input type="text" placeholder="Quantidade de perguntas do quizz">
-                <input type="text" placeholder="Quantidade de níveis do quizz">
-                <input type="text" placeholder="Quantidade de perguntas do quizz">
-                <input type="text" placeholder="Quantidade de níveis do quizz">
-            </div>
-            <button class="botao-tela32" onclick="renderizarTela33()">
+
+            <div class="formulario-perguntas">
+
+            <div class="titulo">Pergunta 1</div>
+            <input type="text" placeholder="Texto da pergunta">
+            <input type="color" placeholder="Cor de fundo da pergunta">
+
+            <div class="titulo">Resposta correta</div>
+            <input type="text" placeholder="Resposta correta">
+            <input type="url" placeholder="URL da imagem">
+
+            <div class="titulo">Resposta incorretas</div>
+            <input type="text" placeholder="Resposta incorreta 1">
+            <input type="url" placeholder="URL da imagem 1">
+            <input type="text" placeholder="Resposta incorreta 2">
+            <input type="url" placeholder="URL da imagem 2">
+            <input type="text" placeholder="Resposta incorreta 3">
+            <input type="url" placeholder="URL da imagem 3">
+
+        </div>
+
+            <button class="botao-tela3" onclick="renderizarTela33()">
                 <p>Prosseguir pra criar níveis</p>
             </button>
         </div>
@@ -105,8 +108,16 @@ function renderizarTela33() {
                 <p>Agora, decida os níveis</p>
             </div>
             
+            <div class="formulario-nivel">
+                <div class="titulo">Nível 1</div>
+                <input type="text" placeholder="Título do nível">
+                <input type="text" placeholder="% de acerto mínima">
+                <input type="url" placeholder="URL da imagem do nível">
+                <input type="text" placeholder="Descrição do nível">
+            </div>
+
             <button class="botao-tela3" onclick="renderizarTela34()">
-                <p>Prosseguir pra criar perguntas</p>
+                <p>Finalizar Quizz</p>
             </button>
         </div>
     `;

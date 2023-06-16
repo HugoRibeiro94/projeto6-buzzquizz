@@ -220,6 +220,7 @@ body {
 .formulario-perguntas{
     width: 600px;
     height: 825px;
+    margin-top: 36px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -236,44 +237,20 @@ body {
     width: 100%;
 }
 
-.paragrafo-comeco-tela-32 {
-    color: #000000;
-    font-size: 23px;
+.titulo{
+    margin-left: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
-    text-align: center;
-    width: 100%;
-}
-
-/********** Formatação pergunta 1 **********/
-
-.pergunta-1 {
-    height: 256px;
-    width: 600px;
-    left: 420px;
-    top: 194px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-
-    margin-top: 27px;
-
-    background-color: yellow;
-}
-
-.titulo-pergunta-1 {
+    font-size: 20px;
+    line-height: 23px;
     color: #000000;
-    font-size: 23px;
-    font-weight: 700;
-    margin-right: 450px;
 }
 
-.pergunta-1 input {
+.formulario-perguntas input {
     height: 46px;
     width: 564px;
+    margin-left: 17px;
     border-radius: 5px;
     border: 1px solid #D1D1D1;
 
@@ -283,122 +260,47 @@ body {
 
     color: #BABABA;
 }
-
-/********** Formatação resposta correta **********/
-
-.resposta-correta {
-    height: 256px;
-    width: 600px;
-    left: 420px;
-    top: 194px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-
-    margin-top: 27px;
-}
-
-.titulo-resposta-correta {
-    color: #000000;
-    font-size: 23px;
-    font-weight: 700;
-    margin-right: 450px;
-}
-
-.resposta-correta input {
-    height: 46px;
-    width: 564px;
-    border-radius: 5px;
-    border: 1px solid #D1D1D1;
-
-    font-style: italic;
-    font-weight: 400;
-    font-size: 19px;
-
-    color: #BABABA;
-}
-
-/********** Formatação respostas incorretas **********/
-
-.respostas-incorretas {
-    height: 256px;
-    width: 600px;
-    left: 420px;
-    top: 194px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-
-    margin-top: 27px;
-}
-
-.respostas-incorretas input {
-    height: 46px;
-    width: 564px;
-    border-radius: 5px;
-    border: 1px solid #D1D1D1;
-
-    font-style: italic;
-    font-weight: 400;
-    font-size: 19px;
-
-    color: #BABABA;
-}
-
-/********** Formatação do botão **********/
-
-.botao-tela32 {
-    height: 54px;
-    width: 367px;
-    border-radius: 15px;
-    border: 1px solid #EC362D;
-    background-color: #EC362D;
-
-    font-size: 21px;
-    font-weight: 400;
-    text-align: center;
-    color: #FFF5F4;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /********** Formatação da tela 3.3 --> Agora, decida os níveis **********/
 
+.formulario-nivel{
+    width: 600px;
+    height: 316px;
+    margin-top: 43px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 
+.formulario-nivel input{
+    height: 46px;
+    width: 564px;
+    margin-left: 17px;
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
 
+    font-style: italic;
+    font-weight: 400;
+    font-size: 19px;
 
-
-
-
-
-
-
-
+    color: #BABABA;
+}
 
 /********** Formatação da tela 3.4 --> Seu quizz está pronto! **********/
-.botao-retonarhome{
+.botao-retornar{
+    margin-top: 10px;
     background-color: #FFFFFF;
-    color: #818181;
     border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #818181;
 }
