@@ -30,7 +30,7 @@ function renderizarQuizzes() {
         let quizz = quizzes[i];
 
         containerQuizz.innerHTML += `
-            <div class="exemplo-quizz">
+            <div class="exemplo-quizz" data-test="others-quiz">
                 <img src='${quizzes[i].image}'>
                 <p>${quizzes[i].title}</p>
             </div>
