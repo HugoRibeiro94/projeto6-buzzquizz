@@ -54,16 +54,7 @@ function renderizarTela3() {
                 <input class="qtd-perguntas" type="text" placeholder="Quantidade de perguntas do quizz" data-test="questions-amount-input">
                 <input class="qtd-niveis" type="text" placeholder="Quantidade de níveis do quizz" data-test="levels-amount-input">
             </div>
-<<<<<<< HEAD
-                <input type="text" placeholder="Título do seu quizz" data-test="title-input">
-                <input type="url" placeholder="URL da imagem do seu quizz" data-test="img-input">
-                <input type="text" placeholder="Quantidade de perguntas do quizz" data-test="questions-amount-input">
-                <input type="text" placeholder="Quantidade de níveis do quizz" data-test="levels-amount-input">
-            </div>
-            <button class="botao-tela3" onclick="renderizarTela32()" data-test="go-create-questions">
-=======
             <button class="botao-tela3" onclick="verificaUrl()" data-test="go-create-questions">
->>>>>>> 262cb1378bf878979660023e0d4b9169631ab04d
                 <p>Prosseguir pra criar perguntas</p>
             </button>
         </div>
@@ -86,6 +77,8 @@ function pegarInput(){
 
     const tamQtdNiveis = inputQtdNiveis.value;//verificar tamanho da string
     console.log(tamQtdNiveis.length);
+
+    
 }
 
 function verificaUrl() {
@@ -131,10 +124,6 @@ function renderizarTela32() {
             <input type="url" placeholder="Resposta incorreta 3" data-test="wrong-answer-input"">
             <input type="text" placeholder="URL da imagem 3" data-test="wrong-img-input">
         </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 262cb1378bf878979660023e0d4b9169631ab04d
         <button class="botao-tela3" onclick="renderizarTela33()" data-test="go-create-levels">
             <p>Prosseguir pra criar níveis</p>
         </button>
