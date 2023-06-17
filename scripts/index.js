@@ -129,6 +129,74 @@ function renderizarTela32() {
     `;
 }
 
+function criar_perguntas() {
+    let tituloQuiz = document.querySelector(".Título-quiz").value;
+    console.log(tituloQuiz);
+    let imagemQuiz = document.querySelector(".imagem-quiz").value;
+    console.log(imagemQuiz);
+    let perguntasQuiz = document.querySelector(".quantidade-perguntas-quiz").value;
+    console.log(perguntasQuiz);
+    let niveisQuiz = document.querySelector(".niveis-quiz").value;
+    console.log(niveisQuiz);
+
+    let check1 = check_titulo(tituloQuiz);
+    let check2 = check_url(imagemQuiz);
+    let check3 = check_quantidade_perguntas(perguntasQuiz);
+    let check4 = check_niveis(niveisQuiz);
+
+    if (check1 === 1 && check2 === 1 && check3 === 1 && check4 === 1) {
+        //fechar telaInscricao1
+        let telaInscricao1 = document.querySelector(".telaInscricao1");
+        telaInscricao1.classList.add("desativado");
+        console.log("telaInscricao1 desabilitada");
+        //ligar telaInscricao2
+        let telaInscricao2 = document.querySelector(".telaInscricao2");
+        telaInscricao2.classList.remove("desativado");
+        console.log("telaInsercao2 habilitada");
+        objetoQuizzAtual.title = tituloQuiz;
+        objetoQuizzAtual.image = imagemQuiz;
+        quantidadeNiveis = niveisQuiz;
+        quantidadeQuestoes = perguntasQuiz;
+
+        renderizarTela32()(perguntasQuiz, niveisQuiz);
+
+    } else {
+        alert("Inserção inválida");
+    }
+}
+
+function renderizar_tela2(perguntas, niveis) {
+    let tela2 = document.querySelector(".inserirAqui");
+    for (i = 0; i < perguntas; i++) {
+
+        tela2.innerHTML += `<details class="collapse ${i + 1}">
+            <summary class="titlePergunta ${i + 1}">
+            <div class="titlePerguntaNome">Pergunta ${i + 1}</div>
+            <div class="iconePergunta"></div>
+            </summary>
+            <div class="descriptionPergunta ${i + 1}">
+                <div class="comeco ${i + 1}">
+                    <input type="text"class"TextoPergunta ${i + 1}" placeholder = "Texto da Pergunta">
+                    <input type="color"class="CorFundoPergunta ${i + 1}"placeholder = "Cor de fundo da Pergunta">
+                </div>
+                <div class="respostaCerta ${i + 1}">Resposta Correta
+                    <input type="text"class="RespostaCorreta ${i + 1}"placeholder = "Resposta Correta">
+                    <input type="url"class="ImagemRespostaCorreta ${i + 1}"placeholder = "URL da Imagem">
+                </div>
+                <div class="respostasErradas ${i + 1}">Respostas incorretas
+                    <input type="text"class="RespostaIncorreta1 ${i + 1}"placeholder = "Resposta Incorreta 1">
+                    <input type="url"class="ImagemRespostaIncorreta1 ${i + 1}"placeholder = "URL da Imagem 1">
+                    <input type="text"class="RespostaIncorreta2 ${i + 1}"placeholder = "Resposta Incorreta 2">
+                    <input type="url"class="ImagemRespostaIncorreta2 ${i + 1}"placeholder = "URL da Imagem 2">
+                    <input type="text"class="RespostaIncorreta3 ${i + 1}"placeholder = "Resposta Incorreta 3">
+                    <input type="url"class="ImagemRespostaIncorreta3 ${i + 1}"placeholder = "URL da Imagem 3">
+                </div>
+            </div>
+        </details>
+        `
+    }
+}
+
 // TELA 3.3
 function renderizarTela33() {
     const tela3 = document.querySelector('.tela');
