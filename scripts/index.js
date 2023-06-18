@@ -96,6 +96,11 @@ function isImage(string) {
     return /^https?:\/\/.+\.(jpg|jpeg|png|webp|avif|gif|svg)$/.test(string);
 }
 
+function obter_quizzesErro(erro) {
+    console.log("Status code: " + erro.response.status); // Ex: 404
+    console.log("Mensagem de erro: " + erro.response.data); // Ex: Not Found
+}
+
 // TELA 3.2
 function renderizarTela32() {
     const tela32 = document.querySelector('.tela');
@@ -197,6 +202,39 @@ function renderizar_tela2(perguntas, niveis) {
     }
 }
 
+//funcao que retorna 1 se a quantidade de perguntas está adequada e 0 se não está
+function check_quantidade_perguntas(quantidade) {
+    if (quantidade >= 3) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+function check_niveis(niveis) {
+    if (niveis >= 2) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+//Busca um unico quizz pelo ID dele e atribui para o objeto quizzAtual
+function obter_quizz(ID) {
+    let promessa = axios.get(`https://mock-api.driven.com.br/api/vm/buzzquizz/quizzes/${ID}`);
+    promessa.then(obter_quizzSucesso);
+    promessa.catch(obter_quizzErro);
+}
+
+function obter_quizzSucesso(resposta) {
+    quizzAtual = resposta.data;
+    console.log("Quizz atual:" + quizzAtual);
+}
+
+function obter_quizzErro(erro) {
+    console.log("Status code: " + erro.response.status); // Ex: 404
+    console.log("Mensagem de erro: " + erro.response.data); // Ex: Not Found   
+}
+
 // TELA 3.3
 function renderizarTela33() {
     const tela3 = document.querySelector('.tela');
@@ -236,5 +274,40 @@ function renderizarTela34() {
             </button>
         </div>
     `;
+}
+
+//jogar o quiz
+function renderizar_quiz(id) {
+    const promessa = axios.get(`https://mock-api.driven.com.br/api/vm/buzzquizz/quizzes/${id}`)
+    promessa.then(gerador_quiz)
+
+}
+function gerador_quiz(dados) {
+    const tela2 = document.querySelector('.tela2')
+    tela2.innerHTML = ''
+    const quiz = dados.data
+    tela2.innerHTML += `
+    <div class="cabecalho">
+        </h1>BuzzQuizz</h1>
+    </div>
+    <div class="cabeça_do_quiz">
+        <img src="${quiz.image}" alt="">
+        <p>${quiz.title}</p>
+    </div>`
+    const perguntas = quiz.questions
+    for (let i = 0; i < perguntas.length; i++) {
+        tela2.innerHTML += `<div class="quizbloco">
+        <div class="espaço_pergunta">${perguntas[i].title}</div>
+        <div class="bloco_alternativas" id='b${i}'</div>
+        </div>`
+        let alternativas = perguntas[i].answers
+        for (let j = 0; j < alternativas.length; j++) {
+            let bloco_alternativas = document.getElementById(`b${i}`)
+            bloco_alternativas.innerHTML += `
+            <div class="alternativas  Ba${i} ${alternativas[j].isCorrectAnswer}" onclick="certo_errado(this,'Ba${i}')">
+                        <img  src="${alternativas[j].image}" alt="">
+                        <p>${alternativas[j].text}</p>`
+        };
+    }
 }
 
