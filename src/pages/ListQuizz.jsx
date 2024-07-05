@@ -4,7 +4,7 @@ import { useEffect } from "react";
 export default function ListQuizz(){
 
     const config = {
-        headers: { Authorization :`${import.meta.env.API_KEY}`}
+        headers: { Authorization :`${import.meta.env.VITE_API_KEY}`}
     }
 
     useEffect(() => {
