@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect } from "react";
+import Header from "../components/Header";
 
 export default function ListQuizz(){
 
@@ -17,7 +18,7 @@ export default function ListQuizz(){
 
     return(
         <>
-      
+            <Header/>
         </>
     )
 }
