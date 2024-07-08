@@ -37,8 +37,6 @@ export default function MainPage(){
                             key={quizz.id}
                             id={quizz.id}
                             image={quizz.image}
-                            levels={quizz.levels}
-                            questions={quizz.questions}
                             title={quizz.title}
                         ></ListQuizz>
                     )

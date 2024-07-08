@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
-export default function ListQuizz({id,image,levels,questions,title}){
+export default function ListQuizz({id,image,title}){
 
     return(
         <Link to={`/quizz/${id}`}>

@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage/>}/>
-        <Route path="/quizz/:id" element={<QuizzPage/>}/>
+        <Route path="/quizz/:idQuizz" element={<QuizzPage/>}/>
       </Routes>
     </BrowserRouter>
   )
