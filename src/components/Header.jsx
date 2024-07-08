@@ -19,6 +19,7 @@ const Top = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     font-family: Roboto;

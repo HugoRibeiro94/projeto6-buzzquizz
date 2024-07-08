@@ -1,13 +1,15 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ResetStyle from './styles/ResetStyle';
-import ListQuizz from './pages/ListQuizz';
+import MainPage from './pages/MainPage';
+import QuizzPage from './pages/QuizzPage';
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ListQuizz/>}/>
+        <Route path="/" element={<MainPage/>}/>
+        <Route path="/quizz/:id" element={<QuizzPage/>}/>
       </Routes>
     </BrowserRouter>
   )
