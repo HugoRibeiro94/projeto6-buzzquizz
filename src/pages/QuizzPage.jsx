@@ -34,6 +34,8 @@ export default function QuizzPage(){
             <Header/>
         
             <Quizz quizz={quizz}></Quizz>
+
+            
         </>
     )
 }

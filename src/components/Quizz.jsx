@@ -9,6 +9,7 @@ export default function Quizz(props){
                 <label>{props.quizz.title}</label>
             </Img>
             
+
         </>
     )
 }
